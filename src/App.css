@@ -1,0 +1,135 @@
+.calculator {
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #222;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.calculator::before {
+    content: "DIGITRON 97";
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+}
+  
+.display {
+    background-color: #000;
+    color: #0f0;
+    font-size: 1.5rem;
+    text-align: right;
+    padding: 8px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    min-height: 40px;
+    overflow: auto;
+}
+  
+.button-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+}
+  
+button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.2s ease;
+}
+  
+button:hover {
+    background-color: #444;
+}
+  
+.operator {
+    background-color: #ff9800;
+}
+  
+.operator:hover {
+    background-color: #e68900;
+}
+  
+.scientific {
+    background-color: #3f51b5;
+}
+  
+.scientific:hover {
+    background-color: #2c3e90;
+}
+  
+.memory {
+    background-color: #4caf50;
+}
+  
+.memory:hover {
+    background-color: #3d8c3d;
+}
+  
+.action {
+    background-color: #f44336;
+}
+  
+.action:hover {
+    background-color: #d32f2f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calculator {
+        width: 95%;
+        padding: 10px;
+    }
+    
+    .calculator::before {
+        font-size: 1rem;
+        top: -20px;
+    }
+    
+    .display {
+        font-size: 1.3rem;
+        padding: 6px;
+        min-height: 35px;
+    }
+    
+    .button-grid {
+        gap: 6px;
+    }
+    
+    button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        margin: 10px auto;
+    }
+    
+    .display {
+        font-size: 1.1rem;
+    }
+    
+    .button-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    button {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+}

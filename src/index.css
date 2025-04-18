@@ -1,0 +1,41 @@
+/* index.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        background: linear-gradient(135deg, #1e2a38 0%, #2980b9 100%);
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        background: linear-gradient(135deg, #243342 0%, #2c8fd6 100%);
+        font-size: 16px;
+        padding: 20px;
+    }
+}
+
+/* Laptop/Desktop Styles */
+@media (min-width: 769px) {
+    body {
+        background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+        font-size: 18px;
+        padding: 30px;
+    }
+}
