@@ -1,4 +1,6 @@
+/* eslint-disable no-eval */
 import React, { useState } from 'react';
+import { evaluate } from 'mathjs';
 import './App.css';
 
 const Calculator = () => {
@@ -12,7 +14,8 @@ const Calculator = () => {
   
   const handleEqual = () => {
     try {
-      setDisplayValue(eval(displayValue).toString());
+      const result = evaluate(displayValue);
+      setDisplayValue(result.toString());
     } catch (error) {
       setDisplayValue('Error');
     }
