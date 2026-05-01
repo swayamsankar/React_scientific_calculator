@@ -38,6 +38,9 @@ React_scientific_calculator/
 ```
 
 ---
+# Architecture Diagram
+<img width="1440" height="1160" alt="image" src="https://github.com/user-attachments/assets/36760d44-40ea-4e11-bf46-3a12304067cc" />
+
 
 ## ▶️ How to Run Locally
 
